@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body {
+            font-family: cursive;
+            text-align: center;
+            margin: 250px;
+            background-color:  #734399;
+        }
+        .vid{
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: -1;
+            
+        }
+        video{
+            object-fit: cover;
+            height: 100%;
+            width: 100%; 
+        }
+        .container {
+            max-width: 650px;
+            margin: auto;
+            padding: 40px;
+            border: 2px solid #4e024e;
+            border-radius: 10px;
+            align-content: center;
+        }
+        input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .back video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="vid">
+        <video autoplay="" muted loop="" class="back video">
+            <source src="game3.mp4" type="video/mp4">
+        </video>
+        <audio controls autoplay loop  >
+            <source src="whole audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    
+    <center>
+    <div class="container" style="color: white; background-color: rgba(0,0,0,1.0); background-position: fixed;">
+        <h1>Guess the Number</h1>
+        <p>I'm thinking of a number between 1 and 50. Try to guess it!</p>
+        <input type="number" id="guess" min="1" max="50" placeholder="Enter your guess" style="width: 180px;">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+        </div>
+
+    <script>
+        let randomNumber = Math.floor(Math.random() * 50) + 1;
+        
+        function checkGuess() {
+            let userGuess = document.getElementById("guess").value;
+            let message = document.getElementById("message");
+            if (userGuess == randomNumber) {
+                message.textContent = "Congratulations! You guessed it right!";
+                message.style.color = "green";
+            } else if (userGuess > randomNumber) {
+                message.textContent = "Too high! Try again.";
+                message.style.color = "red";
+            } else {
+                message.textContent = "Too low! Try again.";
+                message.style.color = "red";
+            }
+        }
+        
+    </script>
+    </center>
+
+
+</body></html>

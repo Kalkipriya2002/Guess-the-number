@@ -1,0 +1,110 @@
+/* Math Game Background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background */
+    font-family: Arial, sans-serif;
+    background-image: url('gtnbi7.jpg'); /* Placeholder for math gaming background image */
+    background-size: cover; /* Cover the entire screen */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Optional: Create a pattern using CSS */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%), linear-gradient(-45deg, rgba(0,0,0,0.1) 25%, transparent 25%);
+    background-size: 50px 50px; /* Size of the grid */
+    pointer-events: none; /* Ensures this layer doesn’t interfere with user interaction */
+}
+
+/* General Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center; /* Align buttons to the center */
+    gap: 20px; /* Space between the buttons */
+    margin-top: 30px;
+    z-index: 1; /* Keep the buttons on top of the background */
+    margin: 300px;
+    width: 950px;
+   
+}
+
+/* Base Button Styling */
+.btn {
+    padding: 25px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out; /* Animation on page load */
+    background-attachment: fixed;
+}
+
+/* Button Colors */
+.btn-primary {
+    background-color: #0fdc0c; 
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #b4de0b; 
+    color: white;
+}
+
+.btn-danger {
+    background-color: #e70e24;
+    color: white;
+}
+
+/* Hover Effects and Animation */
+.btn:hover {
+    transform: scale(1.1); /* Button grows when hovered */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+.btn-secondary:hover {
+    background-color: #9a067c; /* Darker Grey */
+}
+
+.btn-danger:hover {
+    background-color: #01df9d; /* Darker Red */
+}
+
+/* Bounce Animation on Load */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce Effect on Hover */
+.btn:hover {
+    animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}

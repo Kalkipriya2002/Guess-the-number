@@ -1,0 +1,131 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('gtnbi3.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);  /* Dark semi-transparent background for header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+section a {
+    color: #734399; /* Green color for links */
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+div{
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    }
+    a{
+        text-align: center;
+        font-size: x-large;
+        font-style: italic;
+        color: #734399;
+       
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    font-size: 2em;
+}
+
+footer a {
+    color: #00ff00;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect for sections */
+section:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,124 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-display:center ;
+    background-color: #734399;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: url(kpss3.avif);
+    background-repeat: no-repeat;
+    background-position: 0cap;
+    background-size: cover;
+
+  }
+  
+  /* Container for the form */
+  .signup-container {
+    background-color: rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+
+
+    
+  }
+ 
+  h2 {
+    text-align: center;
+  
+  }
+  
+  /* Input group styles */
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 15px;
+    color: wheat;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgba(0,0,0,0.1);
+    
+  }
+  
+  /* Button styles */
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #734399;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  .signup-btn:active{
+    background-color: #004085;
+    transform: scale(1);
+  }
+  .button-container {
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .click-here-btn {
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    background-color: #734399;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;    
+    margin: 1.5px;
+    
+    
+  }
+  
+  /* Hover Effect for the Button */
+  .click-here-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+  }
+  
+  /* Active Effect (when button is clicked) */
+  .click-here-btn:active {
+    background-color: #004085;
+    transform: scale(1); /* Return to normal size when clicked */
+  }
+  
